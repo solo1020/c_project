@@ -26,6 +26,12 @@ int main(int argc, char const *argv[])
         // printf("actual value ---> %.15f", value);
     }
 
+    int num = 0;
+    printf("enter a num: ");
+
+    if( scanf("%d",&num) == 1 ){
+        printf("entered one right num: %d", num);
+    }
     return 0;
 }
 
