@@ -17,3 +17,11 @@ scanf("%lf",&mint[2]);  // 赋值给地三个元素
 
 int array[] 是 c 语言写法  
 int [] array 是 Java写法  
+
+字符IO:
+---
+getchar()  
+
+putchar() 只根据最后一个字节决定显示哪个字符  
+
+strlen()  

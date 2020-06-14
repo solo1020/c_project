@@ -50,13 +50,30 @@ int main(int argc, char const *argv[])
     //     printf("\n");
     // }
 
+
+
+
+    /**
+     *  A
+     *  ABA
+     *  ABCBA
+     *  ABCDCBA
+     *  ABCDEDCBA
+     * 
+     * 
+     * */
     char c = 'A';
     printf("enter a uppercase charactor: ");
     scanf("%c", &c);
-    for(line = 0; line < 5; line++){
-        for(size = 0; size ;){
-            
+    int len = c - 'A' + 1;
+    for(line = 0; line < len; line++){
+        for(size = 0; size < line; size++){
+            printf("%c", 'A' + size);
         }
+        for( size = 0; size <= line; size++){
+            printf("%c", c - (len - line - 1) - size);
+        }
+        printf("\n");
     }
 
     return 0;
