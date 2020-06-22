@@ -25,3 +25,20 @@ getchar()
 putchar() 只根据最后一个字节决定显示哪个字符  
 
 strlen()  
+
+ctype.h 字符类型判断：
+---
+为真返回true,即 非0  
+
+是字母或数字：isalnum() 
+字母：isalpha()  
+空白符（空格 制表符 换行符）: isblank()  
+控制字符如 ctrl+B：iscntrl()  
+数字：isdigit()  
+小写字母：islower()  
+大写字母：isupper()  
+十六进制数字符：isxdigit()  
+tolower():如果参数是大写函数返回小写，否则返回原参数  
+toupper():同理  
+
+while(x++ < 10 && x+y < 20 )x先++,因为逻辑运算从左到右  
